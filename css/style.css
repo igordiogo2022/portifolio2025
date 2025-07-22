@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --cor1: #152839;
+    --cor2: #0F3451;
+    --cor3: #EBEDEC;
+    --cor4: #52C1C9;
+    --fonte1: "Poppins", sans-serif;
+    --fonte2: "Roboto", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor1);
+    padding: 3% 15%;
+}
+#principal{
+    background-color: var(--cor2);
+    width: 100%;
+    height: 65vh;
+    border-radius: 18px;
+    margin-bottom: 5vh;
+}
+menu{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5%;
+    padding: 1.5% 5%;
+    font-family: var(--fonte1);
+}
+.menuAtivo{
+    border-bottom: 2px solid white;
+}
+.botaoMenu{
+    text-decoration: none;
+    color: white;
+}
+#textoImg{
+    display: flex;
+    width: 100%;
+    height: 86%;
+    padding: 0 5% 2% 5%;
+}
+#texto{
+    width: 45%;
+    padding: 3% 0;
+    height: 92%;
+}
+#titulo{
+    font-family: var(--fonte2);
+    font-size: 45px;
+    font-weight: normal;
+    color: white;
+    font-weight: 400;
+}
+strong{
+    font-size: 65px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    box-shadow: 10px 10px 0 var(--cor4);
+}
+#subtitulo{
+    font-family: var(--fonte2);
+    letter-spacing: 2px;
+    color: var(--cor4);
+}
+#img{
+    width: 38%;
+    height: 92%;
+}
+#divCards{
+    display: flex;
+    width: 100%;
+    height: 52vh;
+    gap: 5%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor3);
+    color: var(--cor2);
+    width: 30%;
+    height: 97%;
+    border-radius: 18px;
+    padding: 1.5%;
+    gap: 3.5%;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.icon{
+    font-size: 70px;
+}
+.tituloCard{
+    font-size: 30px;
+    font-family: var(--fonte2);
+}
+.descricaoCard{
+    font-family: var(--fonte1);
+    font-size: 20px;
+}
+@media (max-width: 600px) {
+    body{
+        padding: 3% 5%;
+    }
+    #principal{
+        background-color: var(--cor1);
+        height: 50%;
+    }
+    #textoImg{
+        flex-direction: column;
+        padding: 0;
+    }
+    #texto{
+        width: 100%;
+    }
+    #titulo{
+        font-size: 30px;    
+    }
+    #subtitulo{
+        font-size: 20px;    
+    }
+    strong{
+        font-size: 50px;    
+    }
+    #img{
+        width: 100%;
+        height: 70%;
+    }
+    img{
+        border-radius: 16px;
+        box-shadow: 0 0;
+    }
+    #divCards{
+        flex-direction: column;
+        height: 50%;
+        row-gap: 2%;
+    }
+    .card{
+        width: 96%;
+        height: 28%;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    .descricaoCard{
+        text-align: center;
+    }
+}

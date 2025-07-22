@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --cor1: #152839;
+    --cor2: #0F3451;
+    --cor3: #EBEDEC;
+    --cor4: #52C1C9;
+    --fonte1: "Poppins", sans-serif;
+    --fonte2: "Roboto", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor1);
+    padding: 0 15% 3% 15%;
+}
+menu{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5%;
+    padding: 1.5% 5%;
+    font-family: var(--fonte1);
+}
+.menuAtivo{
+    border-bottom: 2px solid white;
+}
+.botaoMenu{
+    text-decoration: none;
+    color: white;
+}
+#titulo{
+    font-family: var(--fonte2);
+    font-size: 45px;
+    font-weight: normal;
+    color: white;
+    font-weight: 600;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    padding-top: 1.5%;
+    width: 100%;
+    height: 65vh;
+    background-color: var(--cor2);
+    border-radius: 16px;
+}
+.divImg{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 48.5%;
+    column-gap: 5%;
+}
+.imgProjeto{
+    width: 35%;
+    height: 100%;
+    border-radius: 16px;
+    border: 3px solid var(--cor4);
+}
+.imgProjeto:hover{
+    transform: scale(1.1);
+}
+.corpo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.texto{
+    width: 50%;
+    height: 95%;
+    padding: 5% 0 0 5%;
+    font-family: var(--fonte1);
+    color: var(--cor3);
+}
+.tituloCard{
+    font-size: 32px;
+}
+.descricaoCard{
+    font-size: 16px;
+}
+.divTecnologias{
+    display: flex;
+    margin-top: 1%;
+    column-gap: 3%;
+}
+.cardTecnologia{
+    background-color: var(--cor4);
+    border-radius: 6px;
+    padding: 0.5% 2%;
+    color: white;
+    font-weight: 500;
+}
+.tecHtml{
+    background-color: orangered;
+}
+.tecCss{
+    background-color: rgb(0, 122, 179);
+}
+.tecJs{
+    background-color: yellow;
+    color: black;
+}
+.divLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+    width: 20%;
+    height: 100%;
+    padding: 0 10% 0 0;
+}
+.botaoLink{
+    text-decoration: none;
+    font-family: var(--fonte1);
+    color: white;
+    background-color: var(--cor1);
+    border-radius: 6px;
+    padding: 3% 6%;
+    font-size: 18px;
+}
+.botaoLink:hover{
+    transform: scale(1.05);
+}
+.botaoLink:active{
+    background-color: #0e1a25;
+}
+@media (max-width: 600px) {
+    body{
+        padding: 0 5% 3% 5%;
+    }
+    .card{
+        height: 60vh;
+    }
+    .divImg{
+        height: 44%;
+    }
+    .img1{
+        width: 90%; 
+    }
+    .img2{
+        display: none;
+    }
+    .corpo{
+        flex-direction: column;
+        height: 66%;
+    }
+    .texto{
+        width: 93%;
+        height: 70%;
+        padding: 3% 3.5% 0 3.5% 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+    }
+    .tituloCard{
+        font-size: 23px;
+    }
+    .divLinks{
+        width: 100%;
+        height: 30%;
+        flex-direction: row;
+        /* align-items: center;
+        justify-content: center; */
+        padding: 0 0 0 0;
+        gap: 2%;
+    }
+    .botaoLink{
+        padding: 3%;
+        font-size: 16px;
+    }
+}
